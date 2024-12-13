@@ -1,0 +1,33 @@
+<body class="body">
+<ion-content [fullscreen]="false">
+  <div class="header">
+    <ion-title class="title">Bem vindo</ion-title>
+    <p class="subtitle">Se Cadastre aqui</p>
+
+    <form>
+      <div class="align-center">
+        <ion-item class= "input-wrapper">
+          <ion-input placeholder="Nome" class="input"></ion-input>
+          <ion-icon nome="person-outline"></ion-icon>
+        </ion-item>
+        <ion-item class= "input-wrapper">
+          <ion-input placeholder="Email" class="input"></ion-input>
+          <ion-icon nome="person-outline"></ion-icon>
+        </ion-item>
+        <ion-item class= "input-wrapper">
+          <ion-input placeholder="Senha" class="input"></ion-input>
+          <ion-icon nome="lock-closed-outline"></ion-icon>
+        </ion-item>
+        <div class="align-center">
+          <p>Já tem cadastro?<a [routerLink]="['/login']"> Faça login agora</a></p>
+        </div>
+      </div>
+      <ion-fab vertical="bottom" horizontal="end" style="margin-bottom: 10px;">
+        <ion-fab-button [routerLink]="['/login']">
+          <ion-icon name="chevron-forward"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </form>
+  </div>
+</ion-content>
+</body>
